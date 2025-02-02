@@ -4,7 +4,7 @@ import getData from '@//lib/FetchGame';
 
 
 export default async function page({ searchParams }) {
-  const params = await searchParams; // ✅ Await searchParams
+  const params = searchParams; // ✅ Await searchParams
   const query = params.q || "";
   const games = await getData(query);
 

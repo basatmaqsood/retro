@@ -7,8 +7,9 @@ generator client {
 
 datasource db {
   provider = "sqlite"
-  url      = "file:./dev.db"
-}
+  // url      = "file:./dev.db"
+  url      = "file:/tmp/your-database-file.db"
+  }
 
 model Game {
   id          Int        @id @default(autoincrement())

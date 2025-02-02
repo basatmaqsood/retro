@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {};
-module.exports = {
+
+export default {
     redirects: async () => [
         {
             source: "/game",
@@ -9,5 +10,3 @@ module.exports = {
         },
     ],
 };
-
-export default nextConfig;

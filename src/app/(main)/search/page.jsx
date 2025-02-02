@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Image from "next/image";
 import getData from '@//lib/FetchGame';
 
@@ -9,6 +9,8 @@ export default async function page({ searchParams }) {
   const games = await getData(query);
 
   return (
+    <Suspense fallback={<div>Loading...</div>}>
+
     <div>
       <h1 className="font-display text-2xl md:text-3xl mb-4 ">
         Search Results for : {query}
@@ -40,5 +42,7 @@ export default async function page({ searchParams }) {
         ))}
       </div>
     </div>
+    </Suspense> 
+
   );
 }

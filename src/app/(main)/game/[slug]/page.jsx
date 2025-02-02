@@ -1,13 +1,20 @@
-'use client'
-import { useParams } from 'next/navigation';
+"use client";
+import { useParams } from "next/navigation";
+import React, { useEffect, useState } from "react";
+import getData from "@//lib/FetchGame"; // Import your API function
 
-import React, { Suspense } from 'react'
+export default function Page() {
+  const { slug } = useParams();
+  const [game, setGame] = useState(null);
 
-export default function page() {
-  const { slug } = useParams(); // Get the slug from the URL
+
+
+
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-    <div>{slug}</div>
-    </Suspense>
-  )
+    <div>
+      <h1>{game?.title}</h1>
+      <p>{game?.description}</p>
+      {slug}
+    </div>
+  );
 }

@@ -39,7 +39,7 @@ export default function Header() {
 
 
   return (
-    <header className="px-4 flex flex-col justify-between items-center h-14 py-2  relative">
+    <header className="px-4 flex flex-col justify-between items-center h-14 py-2  relative z-10">
       <div className="w-full flex justify-between items-center">
         <a href="/">
           <Image

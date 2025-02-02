@@ -7,7 +7,6 @@ import SideBarMenuList from "./SideBarMenuList";
 
 export default function SideBarMenu({ categories }) {
   const path = usePathname();
-  console.log(categories)
 
   const mainMenuItems = [
     {

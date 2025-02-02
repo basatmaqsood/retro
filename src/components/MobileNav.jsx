@@ -29,7 +29,7 @@ const menuLinks = [
 export default function MobileNav() {
   return (
     <nav>
-      <div className="w-screen h-max bg-main shadow-lg flex flex-col items-center justify-center p-4 z-50">
+      <div className="w-screen h-max bg-main shadow-lg flex flex-col items-center justify-center p-4 z-50000">
         <Search />
         <nav className="mt-4 w-full text-center">
           {menuLinks.map((link) => (

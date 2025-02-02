@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${deltaGothic.variable} antialiased`}
+        className={`${inter.variable} ${deltaGothic.variable} antialiased bg-main`}
       >
         {children}
       </body>

@@ -6,10 +6,10 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:./dev.db"
-  // url      = "file:/tmp/your-database-file.db"
-  }
+  provider = "postgresql"
+  url      = env("DATABASE_URL") // It's best practice to store your URL in .env
+}
+
 
 model Game {
   id          Int        @id @default(autoincrement())

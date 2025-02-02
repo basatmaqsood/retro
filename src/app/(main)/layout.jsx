@@ -1,9 +1,12 @@
 import Footer from "@//components/Footer";
 import Header from "@//components/Header";
 import Sidebar from "@//components/Sidebar";
+import { Suspense } from "react";
 
 export default function MainLayout({ children }) {
   return (
+    <Suspense>
+
     <div className="flex flex-col h-screen ">
       <Header/>
       <div className="flex flex-1 overflow-hidden">
@@ -14,5 +17,6 @@ export default function MainLayout({ children }) {
         </div>
       </div>
     </div>
+    </Suspense>
   );
 }

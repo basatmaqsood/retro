@@ -1,4 +1,5 @@
 import { PrismaClient } from "@prisma/client";
+import exp from "constants";
 const prisma = new PrismaClient();
 
 export default async function getGames(q) {
@@ -57,5 +58,10 @@ export async function getLatestGames() {
     },
     take: 10, // Limiting the results to 10 games
   });
+  return games;
+}
+
+export async function getAllGames(){
+  const games = await prisma.game.findMany();
   return games;
 }

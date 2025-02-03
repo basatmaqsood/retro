@@ -5,7 +5,7 @@ export default async function sitemap() {
   const url =
     process.env.NODE_ENV === "development"
       ? "http://localhost:3000"
-      : process.env.NEXT_PUBLIC_WEBSITE_URL;
+      : 'https://nextrivals-basat.vercel.app/';
 
   const items = games.map((game) => ({
     url: `${url}/games/${game.slug}`,

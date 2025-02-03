@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -10,12 +10,13 @@ export default function App() {
   return (
     <>
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={50}
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
         className="h-[340px] md:h-[480px] w-full mb-6 rounded-lg border border-accent-secondary bg-main relative z-1"
       >
         <SwiperSlide className="bg-[url(/images/slide/slide-1.png)] bg-no-repeat  bg-right">

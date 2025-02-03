@@ -1,7 +1,7 @@
 import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
-export default async function getCategories() {
+export default async function getCategoriesMenu() {
   const categories = await prisma.category.findMany({
     include: {
       games: true,
@@ -9,3 +9,9 @@ export default async function getCategories() {
   });
   return categories;
 }
+
+export async function getCategoriesAll() {
+  const categories = await prisma.category.findMany({});
+  return categories;
+}
+

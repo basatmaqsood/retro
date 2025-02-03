@@ -65,6 +65,7 @@ async function main() {
       game_url: "dino.zip",
       published: true,
       categories: [1],
+      featured : true
     },
     {
       id: 2,
@@ -75,6 +76,7 @@ async function main() {
       game_url: "your-game-here.zip",
       published: true,
       categories: [1],
+      featured : true
     },
     {
       id: 3,
@@ -85,6 +87,8 @@ async function main() {
       game_url: "your-game-here.zip",
       published: true,
       categories: [1],
+      featured : true
+
     },
     {
       id: 4,
@@ -95,6 +99,7 @@ async function main() {
       game_url: "your-game-here.zip",
       published: true,
       categories: [1],
+      featured : false
     },
     {
       id: 5,
@@ -105,6 +110,7 @@ async function main() {
       game_url: "your-game-here.zip",
       published: true,
       categories: [1],
+      featured : false
     },
     {
       id: 6,
@@ -115,6 +121,8 @@ async function main() {
       game_url: "your-game-here.zip",
       published: true,
       categories: [1],
+      featured : true,
+
     },
     {
       id: 7,
@@ -125,6 +133,7 @@ async function main() {
       game_url: "mario.zip",
       published: true,
       categories: [5],
+      featured : true
     },
     {
       id: 8,
@@ -135,6 +144,7 @@ async function main() {
       game_url: "your-game-here.zip",
       published: true,
       categories: [5],
+      featured : false,
     },
     {
       id: 9,
@@ -145,6 +155,8 @@ async function main() {
       game_url: "your-game-here.zip",
       published: true,
       categories: [5],
+      featured : false
+
     },
     {
       id: 10,
@@ -155,6 +167,9 @@ async function main() {
       game_url: "your-game-here.zip",
       published: true,
       categories: [5],
+      featured : false
+
+
     },
     {
       id: 11,
@@ -165,6 +180,7 @@ async function main() {
       game_url: "your-game-here.zip",
       published: true,
       categories: [1],
+      featured : false
     },
     {
       id: 12,
@@ -175,6 +191,7 @@ async function main() {
       game_url: "your-game-here.zip",
       published: true,
       categories: [1],
+      featured : true
     },
   ];
 

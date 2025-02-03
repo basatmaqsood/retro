@@ -12,3 +12,13 @@ export default async function getGames(q) {
     });
     return games;
   }
+
+  
+export async function getGamesFeatured() {
+  const categories = await prisma.game.findMany({
+    where: {
+      featured: true,
+    },
+  });
+  return categories;
+}

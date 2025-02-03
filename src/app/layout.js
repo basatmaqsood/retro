@@ -13,7 +13,7 @@ const deltaGothic = Dela_Gothic_One({
 });
 
 export const metadata = {
-  title: "Retro",
+  title: "Next Rivals",
   description: "Play Retro Games for free",
 };
 

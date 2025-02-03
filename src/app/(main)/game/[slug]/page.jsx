@@ -2,6 +2,17 @@ import GameEmulator from "@//components/GameEmulator";
 import { getGameBySlug } from "@//lib/FetchGame";
 import { notFound } from "next/navigation";
 
+
+export async function generateMetadata({params}) {
+  const game = await getGameBySlug(params.slug);
+  const title = game.title + " - Next Rivals"  || "Next Rivals";
+  return {
+    title,
+    description: game.description || "Play your favorite games in the browser",
+    image: game.image || "/images/default.png",
+  };
+}
+
 export default async function Page({ params }) {
   const game = await getGameBySlug(params.slug);
   console.log(game);

@@ -34,3 +34,16 @@ export async function getGameBySlug(slug) {
   });
   return game;
 }
+
+export async function getGamesByCategory(slug) {
+  const games = await prisma.game.findMany({
+    where: {
+      categories: {
+        some: {
+          slug: slug,
+        },
+      },
+    },
+  });
+  return games;
+}

@@ -11,7 +11,11 @@ export default async function getCategoriesMenu() {
 }
 
 export async function getCategoriesAll() {
-  const categories = await prisma.category.findMany({});
+  const categories = await prisma.category.findMany({
+    include: {
+      games: true,
+    },
+  });
   return categories;
 }
 

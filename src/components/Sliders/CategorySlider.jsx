@@ -56,7 +56,7 @@ export default function CategorySlider({ categories }) {
       <div className="flex justify-between gap-4">
         <h2 className="font-display mb-4 items-center">Categories</h2>
         <a
-          href=""
+          href="/categories"
           className="text-sm font-medium hover:underline underline-offset-4 transition-all ease-in"
         >
           View All <ChevronRight className="h-4 w-4 inline-block text-accent" />

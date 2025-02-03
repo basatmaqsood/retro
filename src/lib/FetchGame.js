@@ -47,3 +47,15 @@ export async function getGamesByCategory(slug) {
   });
   return games;
 }
+
+
+
+export async function getLatestGames() {
+  const games = await prisma.game.findMany({
+    orderBy: {
+      created_at: 'desc', // Sorting by created_at in descending order
+    },
+    take: 10, // Limiting the results to 10 games
+  });
+  return games;
+}

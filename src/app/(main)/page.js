@@ -12,7 +12,7 @@ export default async function Home() {
       <HeroSlider />
       <CategorySlider categories={categories} />
       {/* Show featured games here */}
-      <ShowGames games={featuredGames} title="Featured Games" />
+      <ShowGames games={featuredGames} title="Featured Games" hideNav={true} />
     </>
   );
 }

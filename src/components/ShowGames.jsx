@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
 
-export default function ShowGames({ games, title }) {
+export default function ShowGames({ games, title, hideNav = false }) {
   return (
     <div>
       <h1 className="font-display text-2xl md:text-3xl mb-4 ">{title}</h1>
-      <nav className="rounded-md w-full mb-4">
+      <nav className={`${hideNav? 'hidden':''} rounded-md w-full mb-4`}>
         <ol className="list-reset flex ">
           <li>
             <a href="/">Home</a>

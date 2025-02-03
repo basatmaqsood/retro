@@ -14,7 +14,7 @@ export default function SideBarMenu({ categories }) {
       slug: "/",
     },
     {
-      title: "New Games",
+      title: "Latest Games",
       icon: <ClipboardPlus />,
       slug: "/new-games",
     },

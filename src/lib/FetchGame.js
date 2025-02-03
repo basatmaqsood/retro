@@ -22,3 +22,15 @@ export async function getGamesFeatured() {
   });
   return categories;
 }
+
+export async function getGameBySlug(slug) {
+  const game = await prisma.game.findFirst({
+    where: {
+      slug,
+    },
+    include: {
+      categories: true,
+    },
+  });
+  return game;
+}

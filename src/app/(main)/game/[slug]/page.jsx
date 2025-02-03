@@ -1,20 +1,29 @@
-"use client";
-import { useParams } from "next/navigation";
-import React, { useEffect, useState } from "react";
-import getData from "@//lib/FetchGame"; // Import your API function
+import GameEmulator from "@//components/GameEmulator";
+import { getGameBySlug } from "@//lib/FetchGame";
+import { notFound } from "next/navigation";
 
-export default function Page() {
-  const { slug } = useParams();
-  const [game, setGame] = useState(null);
+export default async function Page({ params }) {
+  const game = await getGameBySlug(params.slug);
+  console.log(game);
 
-
-
+  if (!game) return notFound(); // Show a 404 page if the game isn't found
 
   return (
     <div>
-      <h1>{game?.title}</h1>
-      <p>{game?.description}</p>
-      {slug}
+      <nav className="rounded-md w-full mb-4">
+        <ol className="list-reset flex ">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li className="mx-2 text-gray-500" >
+            <span>/</span>
+          </li>
+          <li>
+            <a href=''>{game.title}</a>
+          </li>
+        </ol>
+      </nav>
+      <GameEmulator game={game}/>
     </div>
   );
 }

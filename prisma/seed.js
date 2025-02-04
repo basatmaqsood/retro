@@ -211,6 +211,18 @@ async function main() {
       categories: [4],
       featured: true,
     },
+    {
+      id: 15,
+      title: "BattleTanx",
+      slug: "battle-tanx",
+      image: "teenage-mutant-hero-turtles.jpg",
+      game_url: "battle-tanx.zip",
+      description:
+        "BattleTanx (Nintendo 64) is a unique 3D tank combat game set in a post-apocalyptic world where players engage in fast-paced, arena-style battles. As a member of one of several factions, players control heavily armored tanks, navigating various environments like urban landscapes, military bases, and other war-torn settings.",
+      published: true,
+      categories: [5],
+      featured: true,
+    },
   ];
 
   for (const category of categories) {

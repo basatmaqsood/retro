@@ -33,7 +33,7 @@ export default function MobileNav() {
         <Search />
         <nav className="mt-4 w-full text-center">
           {menuLinks.map((link) => (
-            <Link
+            <a
               key={link.slug}
               href={link.path}
               className="block py-2 text-lg font-medium border-b mb-2"
@@ -42,7 +42,7 @@ export default function MobileNav() {
                 {link.icon}
                 {link.name}
               </div>
-            </Link>
+            </a>
           ))}
         </nav>
       </div>

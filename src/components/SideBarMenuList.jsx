@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 
@@ -11,7 +10,7 @@ export default function SideBarMenuList({items, title}) {
       <ul>
         {items.map((item) => (
           <li key={item.slug}>
-            <Link
+            <a
               key={item.slug}
               href={item.slug}
               className={`flex items-center gap-2 p-2 ${
@@ -22,7 +21,7 @@ export default function SideBarMenuList({items, title}) {
             >
               {" "}
               {item?.icon} {item.title} 
-            </Link>
+            </a>
           </li>
         ))}
       </ul>

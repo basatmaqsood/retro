@@ -31,7 +31,7 @@ export default function App() {
               Playing now.
             </p>
             <a
-              href="/"
+              href="https://nextrivals-basat.vercel.app/game/super-mario-bros-3"
               className="bg-yellow-600 hover:bg-yellow-500 font-bold text-lg transition-all ease-in text-black rounded-lg px-3 py-1 w-max"
             >
               Play Now

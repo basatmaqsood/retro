@@ -40,6 +40,10 @@ const About = () => {
         <p className="text-lg">
           There's always something new to explore at **Next Rivals**!
         </p>
+        <h2 className="text-3xl font-display ">Disclaimer</h2>
+        <p className="text-lg ">
+          This website is just Hobby Project and does not own any of the games. All games are property of their respective owners. I do not claim any right to these games. This website is just a place of fun and nostalgia.  If you are the owner of any of these games and want them to be removed, please contact me at <a href = "mailto:itzbasatmaqsood@gmail.com"  >itzbasatmaqsood@gmail.com</a>
+        </p>
       </section>
     </div>
   );

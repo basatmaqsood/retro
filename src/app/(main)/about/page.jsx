@@ -13,36 +13,48 @@ const About = () => {
       <section className="max-w-4xl mx-auto px-4 py-10 space-y-8">
         <h2 className="text-3xl font-display ">Our Mission</h2>
         <p className="text-lg ">
-          At Next Rivals, we believe in the power of games that stood the test of time. From pixelated
-          adventures to iconic action-packed titles, our collection is carefully curated to bring back the
-          golden age of gaming.
+          At Next Rivals, we believe in the power of games that stood the test
+          of time. From pixelated adventures to iconic action-packed titles, our
+          collection is carefully curated to bring back the golden age of
+          gaming.
         </p>
         <p className="text-lg">
-          Our goal is to make retro gaming accessible to everyone. We want to provide a platform where you can
-          relive the experiences of your childhood or explore the games that shaped the history of gaming.
+          Our goal is to make retro gaming accessible to everyone. We want to
+          provide a platform where you can relive the experiences of your
+          childhood or explore the games that shaped the history of gaming.
         </p>
 
         <h2 className="text-3xl font-display ">The Games</h2>
         <p className="text-lg ">
-          We feature a variety of beloved retro games across different platforms—from classic consoles like
-          the NES, SNES, Sega Genesis, and more. You can enjoy hours of fun and even challenge your friends to
+          We feature a variety of beloved retro games across different
+          platforms—from classic consoles like the NES, SNES, Sega Genesis, and
+          more. You can enjoy hours of fun and even challenge your friends to
           some multiplayer action.
         </p>
         <p className="text-lg ">
-          Our emulators are designed for smooth, hassle-free gameplay, so you can focus on the fun!
+          Our emulators are designed for smooth, hassle-free gameplay, so you
+          can focus on the fun!
         </p>
 
         <h2 className="text-3xl font-display ">Join the Community</h2>
         <p className="text-lg ">
-          Become a part of our ever-growing community of retro gaming enthusiasts. Share tips, challenges, and
-          memories with other players, and stay updated on the latest additions to our game library.
+          Become a part of our ever-growing community of retro gaming
+          enthusiasts. Share tips, challenges, and memories with other players,
+          and stay updated on the latest additions to our game library.
         </p>
         <p className="text-lg">
-          There's always something new to explore at **Next Rivals**!
+          There's always something new to explore at Next Rivals!
         </p>
         <h2 className="text-3xl font-display ">Disclaimer</h2>
         <p className="text-lg ">
-          This website is just Hobby Project and does not own any of the games. All games are property of their respective owners. I do not claim any right to these games. This website is just a place of fun and nostalgia.  If you are the owner of any of these games and want them to be removed, please contact me at <a href = "mailto:itzbasatmaqsood@gmail.com"  >itzbasatmaqsood@gmail.com</a>
+          This website is just Hobby Project and does not own any of the games.
+          All games are property of their respective owners. I do not claim any
+          right to these games. This website is just a place of fun and
+          nostalgia. If you are the owner of any of these games and want them to
+          be removed, please contact me at{" "}
+          <a href="mailto:itzbasatmaqsood@gmail.com">
+            itzbasatmaqsood@gmail.com
+          </a>
         </p>
       </section>
     </div>

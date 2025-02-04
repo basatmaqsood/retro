@@ -1,6 +1,7 @@
 import Disqus from "@//components/Disqus";
 import GameEmulator from "@//components/GameEmulator";
-import { getGameBySlug } from "@//lib/FetchGame";
+import ShowGames from "@//components/ShowGames";
+import { getGameBySlug, getGamesByCategory } from "@//lib/FetchGame";
 import { notFound } from "next/navigation";
 
 
@@ -16,7 +17,9 @@ export async function generateMetadata({params}) {
 
 export default async function Page({ params }) {
   const game = await getGameBySlug(params.slug);
-
+  const category = game.categories[0].slug || "game";
+  const relatedGames = await getGamesByCategory(category);
+  console.log(relatedGames)
   if (!game) return notFound(); // Show a 404 page if the game isn't found
 
   return (
@@ -34,8 +37,12 @@ export default async function Page({ params }) {
           </li>
         </ol>
       </nav>
+      <div className="flex flex-col gap-4">
+
       <GameEmulator game={game}/>
-      <Disqus article={game} />
+      <Disqus article={game} /> 
+      <ShowGames  games={relatedGames} title="Related Games :" hideNav= {true} />
+      </div>
     </div>
   );
 }

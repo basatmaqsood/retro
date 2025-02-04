@@ -53,7 +53,7 @@ async function main() {
       game_url: "Aladdin.zip",
       published: true,
       categories: [2],
-      featured: true,
+      featured: false,
     },
     {
       id: 2,
@@ -113,7 +113,7 @@ async function main() {
       game_url: "contra-alien-wars.zip",
       published: true,
       categories: [1],
-      featured: true,
+      featured: false,
     },
     {
       id: 7,
@@ -209,7 +209,7 @@ async function main() {
         "Scrooge McDuck is a wealthy boss who loves rare treasures. Coming to DuckTales, you will be on the journey to find 5 special treasures of Scrooge McDuck. In addition, these 5 treasures will be hidden in 5 different lands. To be able to collect all 5 treasures, you must overcome many obstacles and defeat the bosses at the end of each land.",
       published: true,
       categories: [4],
-      featured: true,
+      featured: false,
     },
     {
       id: 15,
@@ -221,7 +221,7 @@ async function main() {
         "BattleTanx (Nintendo 64) is a unique 3D tank combat game set in a post-apocalyptic world where players engage in fast-paced, arena-style battles. As a member of one of several factions, players control heavily armored tanks, navigating various environments like urban landscapes, military bases, and other war-torn settings.",
       published: true,
       categories: [5],
-      featured: true,
+      featured: false,
     },
   ];
 

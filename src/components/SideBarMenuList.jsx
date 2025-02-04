@@ -3,7 +3,8 @@ import { usePathname } from "next/navigation";
 import React from "react";
 
 export default function SideBarMenuList({items, title}) {
-    const path = usePathname(); 
+    const path = usePathname();
+    console.log(path)
   return (
     <div>
       <h2 className="text-lg text-slate-500 font-bold">{title}</h2>

@@ -45,6 +45,9 @@ export async function getGamesByCategory(slug) {
         },
       },
     },
+    include: {
+      categories: true
+    }
   });
   return games;
 }

@@ -20,7 +20,7 @@ model Game {
   published   Boolean
   created_at  DateTime   @default(now())
   categories  Category[]
-  featured    Boolean?  @default(false)
+  featured    Boolean
 }
 
 model Category {

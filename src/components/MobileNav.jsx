@@ -11,13 +11,13 @@ const menuLinks = [
     icon: <ChartBarDecreasing />,
     slug: "categories",
   },
-  { name: "About", path: "/about", icon: <Info />, slug: "about" },
   {
     name: "New Games",
     path: "/new-games",
     icon: <ClipboardPlus />,
     slug: "new-games",
   },
+  { name: "About", path: "/about", icon: <Info />, slug: "about" },
   {
     name: "Contact",
     path: "/contact",

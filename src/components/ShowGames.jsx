@@ -36,7 +36,7 @@ export default function ShowGames({ games, title, hideNav = false }) {
               <div className="p-2">
                 <h2 className="text-xl font-semibold">{game.title}</h2>
                 <p className="text-accent">
-                  {game.description.substring(0, 45)}...
+                  {game.description.substring(0, 70)}...
                   {/* <a className="hover: text-gray-200" href={`/game/${game.slug}`}>Read More</a> */}
                 </p>
               </div>
